@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZFWaterMark"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of ZFWaterMark."
+  spec.version      = "1.0.0"
+  spec.summary      = "Sample Picture PostProcess Demo"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+                   ZF first pod of picture post process sdk
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/ZFWaterMark"
+  spec.homepage     = "https://github.com/zhengf0509"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "summitzheng" => "summitzheng@tencent.com" }
+  spec.author             = { "zhengf0509" => "380493796@qq.com" }
   # Or just: spec.author    = "summitzheng"
   # spec.authors            = { "summitzheng" => "summitzheng@tencent.com" }
   # spec.social_media_url   = "https://twitter.com/summitzheng"
@@ -67,7 +68,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "12.2"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ZFWaterMark.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/zhengf0509/ZFWaterMark.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "ZFWaterMark", "ZFWaterMark/ZFWaterMark/ViewController.h"
+  # spec.exclude_files = "ZFWaterMark/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
